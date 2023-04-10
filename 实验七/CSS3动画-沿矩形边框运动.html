@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>CSS3动画-沿矩阵边框运动</title>
+
+    <style>
+        .box {
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            color: white;
+            position: relative;
+            animation: move 5s infinite ease-out;
+            -webkit-animation: move 5s infinite ease-out;
+        }
+
+        hr {
+            color: #9a9a9a;
+        }
+
+        @keyframes move {
+            0% {
+                background-color: green;
+                left: 200px;
+                top: 0px;
+            }
+            25% {
+                background-color: red;
+                left: 0px;
+                top: 0px;
+            }
+            50% {
+                background-color: green;
+                left: 0px;
+                top: 200px;
+            }
+            75% {
+                background-color: blue;
+                left: 200px;
+                top: 200px;
+            }
+            100% {
+                background-color: green;
+                left: 200px;
+                top: 0px;
+            }
+        }
+
+        @-webkit-keyframes move {
+            0% {
+                background-color: green;
+                left: 200px;
+                top: 0px;
+            }
+            25% {
+                background-color: red;
+                left: 0px;
+                top: 0px;
+            }
+            50% {
+                background-color: green;
+                left: 0px;
+                top: 200px;
+            }
+            75% {
+                background-color: blue;
+                left: 200px;
+                top: 200px;
+            }
+            100% {
+                background-color: green;
+                left: 200px;
+                top: 0px;
+            }
+        }
+    </style>
+
+</head>
+
+<body>
+    <h3>CSS3动画-沿矩形边框运动</h3>
+    <hr>
+    <div class="box">我在运动！</div>
+</body>
+
+</html>

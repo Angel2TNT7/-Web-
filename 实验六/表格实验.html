@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>表格实验</title>
+
+    <style type="text/css">
+        table {
+            border: double 8px;
+            border-color: #0000FF;
+        }
+
+        td {
+            border: 1px solid black;
+            text-align: center;
+        }
+
+        #table1 {
+            background-color: #ffffee;
+            width: 80%;
+        }
+
+        #table2 {
+            background-color: #fefefe;
+            width: 80%;
+        }
+    </style>
+</head>
+
+<body>
+    <table width="300" align="center" cellspacing="0" cellpadding="0">
+        <tr>
+            <td>1</td>
+            <td rowspan="2">2</td>
+            <td>
+                <table align="center" id="table1">
+                    <tr>
+                        <td>a</td>
+                        <td rowspan="2">b</td>
+                        <td>c</td>
+                    </tr>
+                    <tr>
+                        <td>d</td>
+                        <td>f</td>
+                    </tr>
+                    <tr>
+                        <td>g</td>
+                        <td>h</td>
+                        <td>i</td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <table align="center" id="table2">
+                    <tr>
+                        <td>a</td>
+                        <td colspan="2">b</td>
+                    </tr>
+                    <tr>
+                        <td>d</td>
+                        <td>e</td>
+                        <td>f</td>
+                    </tr>
+                    <tr>
+                        <td>g</td>
+                        <td>h</td>
+                        <td>i</td>
+                    </tr>
+                </table>
+            </td>
+            <td>6</td>
+        </tr>
+        <tr>
+            <td>7</td>
+            <td>8</td>
+            <td>9</td>
+        </tr>
+    </table>
+</body>
+
+</html>

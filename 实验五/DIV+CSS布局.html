@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>DIV+CSS布局</title>
+    <style>
+        div{
+            font-size: 30px;
+            font-family:cursive
+        }
+        .logo{
+            height: 100px;
+            background-color: #55ff55;
+        }
+        .nav{
+            line-height: 50px;
+            height: 50px;
+            background-color: #33ff55;
+            margin:5px 0 5px 0;
+        }
+        .content{
+            height: 490px;
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            grid-gap: 5px;
+            margin-bottom: 5px;
+            line-height: 50px;
+        }
+        .div1{
+            background-color: #66ff66;
+        }
+        .div2{
+            background-color: #77ff66;
+        }
+        .div3{
+            background-color: #88ffdd;
+        }
+        .div4{
+            background-color: #99ff66;
+        }
+        .footer{
+            background-color: #66ffcc;
+            height: 50px;
+            line-height: 50px;
+        }
+    </style>
+</head>
+<body>
+    <div class="logo">
+        logo
+    </div>
+    <div class="nav">
+        nav
+    </div>
+    <div class="content">
+        <div class="div1">Content-left</div>
+        <div class="div2">Content-center-left</div>
+        <div class="div3">Content-center-right</div>
+        <div class="div4">Content-right</div>
+    </div>
+    <div class="footer">
+        Footer
+    </div>
+</body>
+</html>
